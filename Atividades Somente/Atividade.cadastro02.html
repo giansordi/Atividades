@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bem vindo a B Adm Ap/3ª RM</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .imagem {
+            text-align: center;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 35%;
+            text-align: right;
+        }
+
+        input,
+        textarea {
+            padding: 5px;
+        }
+
+        .botoes {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="imagem">
+        <img src="C:\Users\Aluno\Documents\Sordi.1/Base.jpg"
+             width="250"
+             height="200">
+    </div>
+
+    <h1 class="titulo">
+        Bem vindo a Base de Administração e Apoio da 3º Região Militar
+    </h1>
+
+    <h4 class="titulo">
+        Segue abaixo para o preenchimento dos dados:
+    </h4>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <td>Nome completo:</td>
+                <td>
+                    <input type="text" style="width: 80%;">
+                </td>
+            </tr>
+
+<tr>
+    <td>Posto/Graduação:</td>
+    <td>
+        <select>
+            <option value="">Selecione</option>
+            <option value="soldado">Soldado</option>
+            <option value="cabo">Cabo</option>
+            <option value="3s">3º Sargento</option>
+            <option value="2s">2º Sargento</option>
+            <option value="1s">1º Sargento</option>
+            <option value="st">Subtenente</option>
+            <option value="2ten">2º Tenente</option>
+            <option value="1ten">1º Tenente</option>
+            <option value="cap">Capitão</option>
+            <option value="maj">Major</option>
+            <option value="tc">Tenente-Coronel</option>
+            <option value="cel">Coronel</option>
+        </select>
+    </td>
+</tr>
+
+
+            <tr>
+                <td>Data de Nascimento:</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+
+            <tr>
+                <td>CPF:</td>
+                <td>
+                    <input type="number" style="width: 80%;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>IDT Militar:</td>
+                <td>
+                    <input type="number" style="width: 80%;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Endereço:</td>
+                <td>
+                    <input type="text" style="width: 80%;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email funcional:</td>
+                <td>
+                    <input type="email" style="width: 80%;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Telefone:</td>
+                <td>
+                    <input type="number" style="width: 80%;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Trabalha ou já trabalhou em algum setor?</td>
+                <td>
+                    <input type="radio" name="escolha"> Sim<br>
+                    <input type="radio" name="escolha"> Não<br>
+                    <input type="radio" name="escolha"> Não sei
+                </td>
+            </tr>
+
+            <tr>
+                <td>Se sim, qual setor?</td>
+                <td>
+                    <textarea rows="4" style="width: 80%;"></textarea>
+                </td>
+            </tr>
+
+        </table>
+
+        <h4 class="titulo">
+            Obrigado por preencher o formulário!
+        </h4>
+
+    </form>
+
+</body>
+</html>
