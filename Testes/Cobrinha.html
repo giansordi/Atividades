@@ -1,0 +1,307 @@
+<!DOCTYPE html> <html lang="pt-BR">
+
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jogo da Cobrinha</title>
+
+<style>
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-height: 100vh;
+
+display: flex; justify-content: center; align-items: center;
+
+background-color: #0f172a; font-family: Arial, sans-serif; color: white; }
+
+.jogo { text-align: center; }
+
+h1 { color: #22c55e; margin-bottom: 10px; }
+
+#pontuacao { font-size: 20px; margin-bottom: 15px; }
+
+canvas { background-color: #111827;
+
+border: 4px solid #22c55e; border-radius: 8px;
+
+display: block; margin: auto; }
+
+button { margin-top: 20px;
+
+padding: 12px 25px;
+
+background-color: #22c55e; color: white;
+
+border: none; border-radius: 8px;
+
+font-size: 16px; font-weight: bold;
+
+cursor: pointer; }
+
+button:hover { background-color: #16a34a; }
+
+#mensagem { margin-top: 15px; font-size: 18px; font-weight: bold; }
+
+</style> </head>
+
+<body>
+
+<div class="jogo">
+
+<h1>🐍 Jogo da Cobrinha</h1>
+
+<div id="pontuacao"> Pontuação: 0 </div>
+
+<canvas id="tela" width="400" height="400"></canvas>
+
+<button onclick="reiniciarJogo()"> Reiniciar </button>
+
+<div id="mensagem"></div>
+
+</div>
+
+<script>
+
+// ========================= // CONFIGURAÇÕES // =========================
+
+const canvas = document.getElementById("tela"); const contexto = canvas.getContext("2d");
+
+const tamanho = 20;
+
+let cobra; let comida;
+
+let direcao;
+
+let pontuacao;
+
+let jogoAtivo;
+
+let intervalo;
+
+// ========================= // INICIAR O JOGO // =========================
+
+function iniciarJogo() {
+
+cobra = [ { x: 200, y: 200 }, { x: 180, y: 200 }, { x: 160, y: 200 } ];
+
+direcao = "direita";
+
+pontuacao = 0;
+
+jogoAtivo = true;
+
+document.getElementById("mensagem").innerHTML = "";
+
+atualizarPontuacao();
+
+criarComida();
+
+clearInterval(intervalo);
+
+intervalo = setInterval(atualizarJogo, 120); }
+
+// ========================= // DESENHAR O JOGO // =========================
+
+function desenharJogo() {
+
+// Limpar a tela
+
+contexto.fillStyle = "#111827";
+
+contexto.fillRect( 0, 0, canvas.width, canvas.height );
+
+// Desenhar comida
+
+contexto.fillStyle = "#ef4444";
+
+contexto.fillRect( comida.x, comida.y, tamanho, tamanho );
+
+// Desenhar cobra
+
+cobra.forEach(function(parte, indice) {
+
+if (indice === 0) {
+
+contexto.fillStyle = "#4ade80";
+
+} else {
+
+contexto.fillStyle = "#22c55e";
+
+}
+
+contexto.fillRect( parte.x, parte.y, tamanho, tamanho );
+
+});
+
+}
+
+// ========================= // ATUALIZAR O JOGO // =========================
+
+function atualizarJogo() {
+
+if (!jogoAtivo) { return; }
+
+const cabeca = { x: cobra[0].x, y: cobra[0].y };
+
+// Movimentação
+
+if (direcao === "cima") { cabeca.y -= tamanho; }
+
+if (direcao === "baixo") { cabeca.y += tamanho; }
+
+if (direcao === "esquerda") { cabeca.x -= tamanho; }
+
+if (direcao === "direita") { cabeca.x += tamanho; }
+
+// Verificar colisão
+
+if (colidiuComParede(cabeca) || colidiuComCobra(cabeca)) {
+
+fimDeJogo();
+
+return; }
+
+// Adicionar nova cabeça
+
+cobra.unshift(cabeca);
+
+// Verificar se comeu
+
+if ( cabeca.x === comida.x && cabeca.y === comida.y ) {
+
+pontuacao++;
+
+atualizarPontuacao();
+
+criarComida();
+
+} else {
+
+// Remove a última parte
+
+cobra.pop();
+
+}
+
+desenharJogo(); }
+
+// ========================= // COMIDA // =========================
+
+function criarComida() {
+
+comida = {
+
+x: Math.floor( Math.random() * (canvas.width / tamanho) ) * tamanho,
+
+y: Math.floor( Math.random() * (canvas.height / tamanho) ) * tamanho };
+
+// Evitar que a comida apareça dentro da cobra
+
+for (let parte of cobra) {
+
+if ( parte.x === comida.x && parte.y === comida.y ) {
+
+criarComida();
+
+return; } }
+
+}
+
+// ========================= // COLISÃO COM A PAREDE // =========================
+
+function colidiuComParede(cabeca) {
+
+return ( cabeca.x < 0 || cabeca.x >= canvas.width || cabeca.y < 0 || cabeca.y >= canvas.height );
+
+}
+
+// ========================= // COLISÃO COM A COBRA // =========================
+
+function colidiuComCobra(cabeca) {
+
+for (let i = 0; i < cobra.length; i++) {
+
+if ( cabeca.x === cobra[i].x && cabeca.y === cobra[i].y ) {
+
+return true;
+
+}
+
+}
+
+return false;
+
+}
+
+// ========================= // FIM DO JOGO // =========================
+
+function fimDeJogo() {
+
+jogoAtivo = false;
+
+clearInterval(intervalo);
+
+document.getElementById("mensagem").innerHTML = "💀 Game Over!";
+
+}
+
+// ========================= // PONTUAÇÃO // =========================
+
+function atualizarPontuacao() {
+
+document.getElementById("pontuacao").innerHTML = "Pontuação: " + pontuacao;
+
+}
+
+// ========================= // REINICIAR // =========================
+
+function reiniciarJogo() {
+
+iniciarJogo();
+
+desenharJogo();
+
+}
+
+// ========================= // TECLADO // =========================
+
+document.addEventListener("keydown", function(event) {
+
+if (event.key === "ArrowUp" && direcao !== "baixo") {
+
+direcao = "cima";
+
+}
+
+if (event.key === "ArrowDown" && direcao !== "cima") {
+
+direcao = "baixo";
+
+}
+
+if (event.key === "ArrowLeft" && direcao !== "direita") {
+
+direcao = "esquerda";
+
+}
+
+if (event.key === "ArrowRight" && direcao !== "esquerda") {
+
+direcao = "direita";
+
+}
+
+});
+
+// ========================= // COMEÇAR // =========================
+
+iniciarJogo();
+
+desenharJogo();
+
+</script>
+
+</body>
+
+</html>

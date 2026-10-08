@@ -293,44 +293,465 @@ nav {
     transform: translateY(-3px);
 }
 
+  .hero {
+            min-height: 450px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e3a8a,
+                #2563eb
+            );
+
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero-text {
+            max-width: 800px;
+        }
+
+        .destaque {
+            color: #93c5fd;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 0 0 20px;
+        }
+
+        .subtitulo {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #e2e8f0;
+            margin-bottom: 30px;
+        }
+
+ .botao {
+            display: inline-block;
+
+            background-color: white;
+            color: #1e3a8a;
+
+            padding: 14px 28px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border: none;
+            cursor: pointer;
+
+            margin: 5px;
+
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background-color: #93c5fd;
+            color: #0f172a;
+            transform: translateY(-3px);
+        }
+
+           nav {
+            background-color: #0f172a;
+            padding: 18px 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+
+            padding: 10px 15px;
+
+            border-radius: 6px;
+
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            background-color: #2563eb;
+        }
+
+        .imagem-principal {
+            display: block;
+
+            width: 500px;
+            height: 500px;
+
+            object-fit: cover;
+
+            margin: 30px auto;
+
+            border-radius: 10px;
+
+            border: 1px solid #000;
+        }
+        
+            .modal {
+            display: none;
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba(15, 23, 42, 0.75);
+
+            justify-content: center;
+            align-items: center;
+
+            z-index: 2000;
+        }
+
+        .formulario {
+            background-color: white;
+
+            width: 90%;
+            max-width: 550px;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+            position: relative;
+        }
+
+        .formulario h2 {
+            color: #1e3a8a;
+
+            text-align: center;
+
+            margin-top: 0;
+        }
+
+        .formulario p {
+            color: #475569;
+
+            text-align: center;
+
+            line-height: 1.5;
+        }
+
+         .fechar {
+            position: absolute;
+
+            top: 10px;
+            right: 20px;
+
+            font-size: 30px;
+
+            color: #64748b;
+
+            cursor: pointer;
+        }
+
+        .fechar:hover {
+            color: #1e3a8a;
+        }
+
+         .formulario label {
+            display: block;
+
+            margin-top: 15px;
+            margin-bottom: 5px;
+
+            color: #1e3a8a;
+
+            font-weight: bold;
+        }
+
+        .formulario input,
+        .formulario select,
+        .formulario textarea {
+
+            width: 100%;
+
+            padding: 12px;
+
+            box-sizing: border-box;
+
+            border: 1px solid #cbd5e1;
+
+            border-radius: 6px;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .formulario textarea {
+            resize: vertical;
+        }
+
+        .formulario input:focus,
+        .formulario select:focus,
+        .formulario textarea:focus {
+
+            outline: none;
+
+            border-color: #2563eb;
+
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+        }
+
+            .botao-enviar {
+
+            width: 100%;
+
+            margin-top: 20px;
+
+            padding: 13px;
+
+            background-color: #1e3a8a;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .botao-enviar:hover {
+            background-color: #2563eb;
+        }
+
+        .area-profissoes {
+    background-color: #1e3a8a;
+
+    padding: 50px 5%;
+
+    margin-top: 50px;
+}
+
+.area-profissoes h2 {
+    color: white;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.area-profissoes > p {
+    color: #dbeafe;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.profissoes {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    width: 100%;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+}
+
+
+.card {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+
+.card img {
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+.card button {
+    background-color: #1e3a8a;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.card button:hover {
+    background-color: #2563eb;
+}
+
 </style>
+
+<script>
+function abrirFormulario() {
+    document.getElementById("formulario").style.display = "flex";
+}
+</script>
 
 <body> 
     
     <header class="hero">
 
-    <div class="hero-text">
-        <p class="destaque">TECNOLOGIA • INOVAÇÃO • FUTURO</p>
+        <div class="hero-text">
 
-        <h1>Ciência da Computação</h1>
+            <p class="destaque">
+                TECNOLOGIA • INOVAÇÃO • FUTURO
+            </p>
 
-        <p class="subtitulo">
-            Transforme ideias em tecnologia e prepare-se para
-            construir o futuro através da programação.
-        </p>
+            <h1>
+                Ciência da Computação
+            </h1>
 
-        <a href="#sobre" class="botao">
-            Conheça o curso
-        </a>
-    </div>
+            <p class="subtitulo">
+                Transforme ideias em tecnologia e prepare-se para
+                construir o futuro através da programação.
+            </p>
+
+            <a href="#sobre" class="botao">
+                Conheça o curso
+            </a>
+
+            <button class="botao" onclick="abrirFormulario()">
+                Tenho interesse
+            </button>
+
+        </div>
+
+    </header>
 
 </header>
-    
-    <nav>
-    <div class="logo">
-        💻 Ciência da Computação
+
+<div id="formulario" class="modal">
+
+    <div class="formulario">
+
+        <span class="fechar" onclick="fecharFormulario()">&times;</span>
+
+        <h2>Tenho interesse no curso</h2>
+
+        <p>Preencha seus dados e entraremos em contato.</p>
+
+        <label>Nome:</label>
+        <input type="text" placeholder="Digite seu nome">
+
+        <label>E-mail:</label>
+        <input type="email" placeholder="Digite seu e-mail">
+
+        <label>Telefone:</label>
+        <input type="tel" placeholder="Digite seu telefone">
+
+        <button class="botao-enviar" onclick="enviarFormulario()">
+            Enviar
+        </button>
+
     </div>
 
-    <div class="menu">
-        <a href="#sobre">Sobre o curso</a>
-        <a href="#mercado">Mercado de trabalho</a>
-        <a href="#profissoes">Profissões</a>
-        <a href="#ciclo-comum">Ciclo comum</a>
-    </div>
-</nav>
+</div>
+
+<script>
+
+function abrirFormulario() {
+    document.getElementById("formulario").style.display = "flex";
+}
+
+function fecharFormulario() {
+    document.getElementById("formulario").style.display = "none";
+}
+
+function enviarFormulario() {
+    alert("Formulário enviado!");
+}
+
+</script>
     
-    <img class="imagem-principal" src="C:\Users\Aluno\Documents\Sordi.1/Analise05.jpg" alt="Ciência da Computação">
-    
+     <nav>
+
+        <div class="logo">
+            💻 Ciência da Computação
+        </div>
+
+        <div class="menu">
+
+            <a href="#sobre">
+                Sobre o curso
+            </a>
+
+            <a href="#mercado">
+                Mercado de trabalho
+            </a>
+
+            <a href="#profissoes">
+                Profissões
+            </a>
+
+            <a href="#ciclo-comum">
+                Ciclo comum
+            </a>
+
+        </div>
+
+    </nav>
+
+     <img class="imagem-principal" src="C:\Users\Aluno\Documents\Sordi.1/Analise05.jpg"alt="Ciência da Computação">
+
     
 
     <section id="sobre">
@@ -364,59 +785,100 @@ nav {
     </section>
 
 
+    <section class="area-profissoes">
+
+    <h2>Profissões</h2>
+
+    <p>
+        Conheça algumas das áreas em que você pode trabalhar
+        após cursar Ciência da Computação.
+    </p>
+
     <div class="profissoes">
 
         <div class="card">
-                <img src="C:\Users\Aluno\Documents\Sordi.1/Analise01.jpg">
-                <br><br>
-                <b> Analista de banco de dados </b>
-                <br><br>
-                Desenvolve softwares que organizam, classificam e indexam informações.
-                <br><br>
-                <button class="verificar">
-                    Verificar
-                </button> 
-                </div>
+            <img src="C:\Users\Aluno\Documents\Sordi.1/Analise01.jpg">
 
-                
-                <div class="card">
-                    <img src="C:\Users\Aluno\Documents\Sordi.1/Analise02.jpg">
-                    <br><br>
-                    <b> Técnico de desenvolvimento de softwares e aplicativos </b>
             <br><br>
-            Com as habilidades desenvolvidas no curso de Ciências da Computação, você pode atuar como técnico, elaborando programas e jogos para computadores e celulares.
+
+            <b>Analista de banco de dados</b>
+
             <br><br>
+
+            Desenvolve softwares que organizam, classificam
+            e indexam informações.
+
+            <br><br>
+
             <button class="verificar">
                 Verificar
-            </button> </div>
-            
-            
-            
-            <div class="card">
-                <img src="C:\Users\Aluno\Documents\Sordi.1/Analise03.jpg">
-                <br><br>
-                <b> Analista de marketing e vendas </b>
-                <br><br>
-                Divulga e vende software e hardware. Analisa e planeja novos produtos.
+            </button>
+        </div>
+
+
+        <div class="card">
+            <img src="C:\Users\Aluno\Documents\Sordi.1/Analise02.jpg">
+
             <br><br>
+
+            <b>Técnico de desenvolvimento de softwares e aplicativos</b>
+
+            <br><br>
+
+            Com as habilidades desenvolvidas no curso de
+            Ciências da Computação, você pode atuar como
+            técnico.
+
+            <br><br>
+
             <button class="verificar">
                 Verificar
-            </button> </div>
-            
-            
-            <div class="card">
-                <img src="C:\Users\Aluno\Documents\Sordi.1/Analise04.jpg">
-                <br><br>
-                <b> Agente de suporte técnico </b>
-                <br><br>
-                Assessora usuários na compra de equipamentos e programas. Presta manutenção a sistemas e redes de computadores.
-                <br><br>
-                <button class="verificar">
-                    Verificar
-            </button> </div>
+            </button>
+        </div>
 
-        
+
+        <div class="card">
+            <img src="C:\Users\Aluno\Documents\Sordi.1/Analise03.jpg">
+
+            <br><br>
+
+            <b>Analista de marketing e vendas</b>
+
+            <br><br>
+
+            Divulga e vende software e hardware.
+            Analisa e planeja novos produtos.
+
+            <br><br>
+
+            <button class="verificar">
+                Verificar
+            </button>
+        </div>
+
+
+        <div class="card">
+            <img src="C:\Users\Aluno\Documents\Sordi.1/Analise04.jpg">
+
+            <br><br>
+
+            <b>Agente de suporte técnico</b>
+
+            <br><br>
+
+            Assessora usuários na compra de equipamentos
+            e programas.
+
+            <br><br>
+
+            <button class="verificar">
+                Verificar
+            </button>
+        </div>
+
     </div>
+
+</section>
 
 <section id="ciclo-comum">
 
