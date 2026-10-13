@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atendimento | Mundo Pet</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="topo">
+        <a class="logo" href="index.html">🐾 Mundo Pet</a>
+        <p>Amor e cuidado em cada detalhe!</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav class="navbar" aria-label="Navegação principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cachorros.html">Cachorros</a></li>
+            <li><a href="gatos.html">Gatos</a></li>
+            <li><a href="passaros.html">Pássaros</a></li>
+            <li><a href="outrospets.html">Outros Pets</a></li>
+            <li><a href="casa.html">Casa</a></li>
+            <li><a href="atendimentos.html" aria-current="page">Atendimento</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Apresentação -->
+        <section class="banner">
+            <div class="banner-texto">
+
+                <span>ESTAMOS AQUI PARA AJUDAR</span>
+
+                <h1>Como podemos ajudar você?</h1>
+
+                <p>
+                    Tem dúvidas ou precisa de informações?
+                    Entre em contato com o Mundo Pet.
+                    Será um prazer ajudar você e seu companheiro.
+                </p>
+
+                <a class="botao" href="#formulario">
+                    Enviar uma mensagem
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Informações de contato -->
+        <section class="secao">
+
+            <h2>Entre em contato</h2>
+
+            <p class="subtitulo">
+                Consulte nossos canais de atendimento.
+            </p>
+
+            <div class="categorias">
+
+                <article class="categoria">
+                    <span>✉️</span>
+
+                    <h3>E-mail</h3>
+
+                    <p>
+                        Envie suas dúvidas e sugestões
+                        por e-mail.
+                    </p>
+
+                    <p>
+                        <strong>Seu e-mail será adicionado aqui.</strong>
+                    </p>
+                </article>
+
+                <article class="categoria">
+                    <span>💬</span>
+
+                    <h3>WhatsApp</h3>
+
+                    <p>
+                        Entre em contato para solicitar
+                        informações sobre nossos serviços.
+                    </p>
+
+                    <p>
+                        <strong>Seu número será adicionado aqui.</strong>
+                    </p>
+                </article>
+
+                <article class="categoria">
+                    <span>🕒</span>
+
+                    <h3>Horários</h3>
+
+                    <p>
+                        Informe aqui os dias e horários
+                        em que seu atendimento estará disponível.
+                    </p>
+
+                    <p>
+                        <strong>Consulte nossos horários.</strong>
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Formulário de contato -->
+        <section class="secao" id="formulario">
+
+            <h2>Envie sua mensagem</h2>
+
+            <p class="subtitulo">
+                Preencha os campos abaixo.
+            </p>
+
+            <form class="formulario" action="#" method="post">
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@email.com"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="produtos">Produtos</option>
+                        <option value="duvidas">Dúvidas gerais</option>
+                        <option value="sugestoes">Sugestões</option>
+                        <option value="outros">Outros assuntos</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Sua mensagem</label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        placeholder="Escreva sua mensagem..."
+                        required></textarea>
+                </div>
+
+                <button class="botao" type="submit">
+                    Enviar mensagem
+                </button>
+
+                <p class="aviso-formulario">
+                    Formulário demonstrativo: o envio ainda
+                    precisa ser conectado a um serviço de
+                    recebimento de mensagens.
+                </p>
+
+            </form>
+
+        </section>
+
+        <!-- Perguntas frequentes -->
+        <section class="destaque">
+
+            <h2>Perguntas frequentes</h2>
+
+            <div class="pergunta">
+                <h3>O Mundo Pet vende produtos?</h3>
+
+                <p>
+                    Este site apresenta categorias e informações
+                    sobre pets. A venda de produtos poderá ser
+                    adicionada em uma etapa futura.
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h3>Como posso tirar minhas dúvidas?</h3>
+
+                <p>
+                    Você pode preencher o formulário acima.
+                    Para receber mensagens, será necessário
+                    configurar um serviço de envio.
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h3>Onde encontro informações sobre os animais?</h3>
+
+                <p>
+                    Acesse as páginas Cachorros, Gatos,
+                    Pássaros e Outros Pets no menu principal.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+        <p>🐾 Mundo Pet — Amor por todos os animais.</p>
+
+        <p>Estamos aqui para ajudar você e seu pet!</p>
+
+        <a href="index.html">Voltar ao Início</a>
+
+    </footer>
+
+</body>
+
+</html>
