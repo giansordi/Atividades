@@ -664,8 +664,6 @@ a.categoria:focus-visible {
         font-size: 29px;
     }
 }
-
-
 /* 15. Respeita usuários que reduzem animações */
 
 @media (prefers-reduced-motion: reduce) {
