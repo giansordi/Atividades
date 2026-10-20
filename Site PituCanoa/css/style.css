@@ -1,0 +1,15 @@
+p {
+    color: red;
+}
+body {
+    background-image: url("../imagens/tigre.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+section {
+    background-color: black;
+    width: 80%;
+    margin: 0px;
+    height: 80px;
+}
