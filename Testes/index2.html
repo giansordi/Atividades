@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoints</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <!-- 
+        Explicação dos Breakpoints
+        quando aperto no celular o layout ocupa toda a tela 
+        quando aperto no desktop ele ocupa 6 colulas ou 50% da tela
+        quando maior ou igual 768 ela ocupa 6, quando menor ela ocupa 12
+        -->
+        <div class="col-12 col-md-6 bg-success">Coluna 1</div>
+        <div class="col-12 col-md-6 bg-danger">Coluna 2</div>
+    </div>
+
+    <!-- com vários breakpoints -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+            <div class="row border border-2 border-black">
+                <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi asperiores eveniet fuga exercitationem vel eaque est. Soluta placeat sapiente iusto iure eveniet tempora libero quidem odit! Excepturi, dolorem repudiandae!</div>
+            </div>
+            <div class="row border border-2 border-black">
+                <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi asperiores eveniet fuga exercitationem vel eaque est. Soluta placeat sapiente iusto iure eveniet tempora libero quidem odit! Excepturi, dolorem repudiandae!</div>
+            </div>
+            <div class="row border border-2 border-black">
+                <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi asperiores eveniet fuga exercitationem vel eaque est. Soluta placeat sapiente iusto iure eveniet tempora libero quidem odit! Excepturi, dolorem repudiandae!</div>
+            </div>
+            <div class="row border border-2 border-black">
+                <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi asperiores eveniet fuga exercitationem vel eaque est. Soluta placeat sapiente iusto iure eveniet tempora libero quidem odit! Excepturi, dolorem repudiandae!</div>
+            </div>
+            <div class="row border border-2 border-black">
+                <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi asperiores eveniet fuga exercitationem vel eaque est. Soluta placeat sapiente iusto iure eveniet tempora libero quidem odit! Excepturi, dolorem repudiandae!</div>
+            </div>
+            <div class="row border border-2 border-black">
+                <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sequi asperiores eveniet fuga exercitationem vel eaque est. Soluta placeat sapiente iusto iure eveniet tempora libero quidem odit! Excepturi, dolorem repudiandae!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Titulo do maior para o menor-->
+    <div class="container">
+        <h1>As cores no bootstrap</h1>
+        <h2>As cores no bootstrap</h2>
+        <h3>As cores no bootstrap</h3>
+        <h4>As cores no bootstrap</h4>
+        <h5>As cores no bootstrap</h5>
+    </div>
+
+        <!-- colocando cores nas letras -->
+    <div class="container">
+        <p class="text-primary">Texto Azul primary</p>
+        <p class="text-success">Texto verde success</p>
+        <p class="text-info">Texto azul claro</p>
+        <p class="text-secondary">Texto cinza</p>
+        <p class="text-danger">Texto vermelho</p>
+        <p class="text-warning">Texto amarelo</p>
+        <p class="text-light">Texto branco</p>
+        <p class="text-dark">Texto preto</p>
+        <p class="text-muted">Texto preto fosco</p>
+    </div>
+
+    <!-- Aplicando cores de fundo -->
+    <div class="bg-primary text-white p-3">Fundo Azul com Texto Branco</div>
+    <div class="bg-warning text-dark p-3">Fundo Amarelo com Texto Escuro</div>
+    <div class="bg-dark text-white p-3">Fundo Escuro com Texto Branco</div>
+
+    <!-- adicionando gradiente -->
+    <div class="bg-danger bg-gradient">Gradiente</div>
+
+    <!-- aplicando opacidade -->
+    <div class="bg-success bg-opacity-50">Gradiente</div>
+
+    <!-- Aplicando bordas coloridas -->
+    <div class="border border-primary">Borda Azul</div>
+    <div class="border border-success">Borda Verde</div>
+    <div class="border border-danger border-3">Borda Vermelha mais espessa</div>
+
+    <!-- Cores em componentes -->
+    <button class="btn bg-success">Salvar</button>
+    <button class="btn bg-danger">Cancelar</button>
+    <button class="btn btn-primary">Enviar</button>
+
+    <!-- Exemplos de alertas -->
+    <div class="alert alert-warning" role="alert">
+        Atenção: verifique os dados antes de prosseguir!
+    </div>
+
+    <!-- Cores neutras text-white, text-black -->
+    <div class="alert alert-dark" role="alert">
+        Atenção: verifique os dados antes de prosseguir!
+    </div>
+</body>
+</html>
