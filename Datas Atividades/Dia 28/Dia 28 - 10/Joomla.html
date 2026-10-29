@@ -4,34 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Bom</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
+    <!-- icones -->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    <body>
     <!-- logo da empresa ou nome -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+     <header>
+    <nav class="navbar navbar-expand-sm bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Meu Site</a>
-                        <h5>Links</h5>
-                            <a class="text-decoration-none text-white" href="#">Inicio</a>
-                            <a class="text-decoration-none text-white" href="#">Sobre nós</a>
-                            <a class="text-decoration-none text-white" href="#">Contato</a>
+                <a class="navbar-brand fw-bold" href="#">Meu Site</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-ds-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    <!-- Navegação -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav ms-auto">                           
+                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="#">Sobre nós</a>
+                            <a class="nav-link" href="#">Contato</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+    </nav>
     </header>
 
-    <!-- caixa principal -->
-    <main>
-        <div class="container my-5">
-            <p>Esta é a minha atividade, e eu estou recém aprendendo programação</p>
-        </div>
+    <!-- conteúdo principal -->
+    <main class="flex-grow-1 py-3">
+
+        <!-- Aviso -->
+        <section class="container mb-4 text-center">
+            <div class="p-4 bg-warning rounded-4 shadow-sm">
+                <h1 class="text-white">Meu Site Bom</h1>
+                <p class="text-white">Esta é a minha atividade, e eu estou recém aprendendo programação se você tiver sugestões de como eu posso melhorar o meu trabalho, peço para que me envie um email</p>
+                <a class="btn btn-dark btn-lg" href="#">Enviar email</a>
+            </div>
+        </section>
+        <!-- Caixa de texto -->
+        <section class="container mb-5 text-center">
+            <section class="card" style="max-width: 320px">
+  <img src="https://picsum.photos/800/300" class="card-img-top">
+  <div class="card-body">
+    <h4 class="card-title">Site Legal</h4>
+    <p class="card-text">Lembrando estou me esforçando ao máximo para criar um site legal, então dá um like ae.</p>
+    <a href="#" class="btn-solid theme-primary">Verificar</a>
+  </div>
+</section>
+
+        </section>
+
     </main>
-
     <!-- Área do Rodapé -->
-    <footer>
-
-
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-lg-between align-items-center gap-3">
+                <p>&copy; Se mexer no código do meu site vai tomar um pau</p>
+                <nav class="d-flex gap-3">
+                    <a class="text-decoration-none text-white" href="#">Termos de uso</a>
+                    <a class="text-decoration-none text-white" href="#">Privacidade</a>
+                    <a class="text-decoration-none text-white" href="#">Suporte</a>
+                </nav>
+            </div>
+        </div>
     </footer>
 
     
