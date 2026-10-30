@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- cdn do css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- cdn dos icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!---------------------------------------------------------------------------- 
+        área cabeçalho 
+    ------------------------------------------------------------------------------>
+    <header>
+        <!-- logo da empresa ou nome -->
+        <nav class="navbar navbar-expand-sm bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Meu Site</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu de navegação -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-----------------------------------------------------------------------------------------
+        Conteúdo principal
+    -------------------------------------------------------------------------------------------->
+<section class="container my-5">
+    <div class="row align-itens-center g-4">
+        <!-- imagem -->
+         <div class="col-md-6">
+            <img src="oficina.jpg" class="img-fluid rounded-4 shadow" alt="Oficina mecânica">
+         </div>
+         <!-- texto -->
+          <div class="col-md-6">
+            <span class="text-primary fw-bold">QUEM SOMOS</span>
+            <h2 class="fw-bold mt-2 mb-3">Autocenter Premium</h2>
+            <p class="text-secondary">Cuidando do seu carro com qualidade e confiança</p>
+
+            <p>
+                Somos uma oficina especializada em Manutenção automotiva, oferecendo de qualidade, profissionais experientes e atendimento transparante.
+            </p>
+
+            <p>
+                Nosso compromisso é garantir a segurança e o bom funcionamento do seu veículo.
+            </p>
+            <!-- Diferenciais -->
+             <div class="row mt-3">
+                <div class="col-md-6 mb-3">
+                    <i class="text-success">✅</i>Qualidade
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="text-success">✅</i>Confiança
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="text-success">✅</i>Experiência
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="text-success">✅</i>Agilidade
+                </div>
+             </div>
+          </div>
+    </div>
+</section>
+
+
+
+
+
+    <!--------------------------------------------------------------------------------------------------------
+    Área de rodapé
+    ---------------------------------------------------------------------------------------------------------->
+    <footer class="bg-dark text-white py-4 fixed-bottom">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-lg-between align-items-center gap-3">
+                <p>&copy; 2026 Meu Site. Todos direitos reservados.</p>
+                <nav class="d-flex gap-3">
+                    <a class="text-decoration-none text-white" href="#">Termos de uso</a>
+                    <a class="text-decoration-none text-white" href="#">Privacidade</a>
+                    <a class="text-decoration-none text-white" href="#">Suporte</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

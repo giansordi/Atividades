@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- cdn do css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- cdn dos icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!---------------------------------------------------------------------------- 
+        área cabeçalho 
+    ------------------------------------------------------------------------------>
+    <header>
+        <!-- logo da empresa ou nome -->
+        <nav class="navbar navbar-expand-sm bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Meu Site</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu de navegação -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-----------------------------------------------------------------------------------------
+        Conteúdo principal
+    -------------------------------------------------------------------------------------------->
+<div class="container">
+    <table class="table table-hover table-striped align-middle p-3">
+        <!-- cabeçalho da tabela -->
+        <thead class="table-secondary">
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Serviço / Manutenção</th>
+                <th scope="col">Tempo  estimado</th>
+                <th scope="col">Categoria</th>
+                <th scope="col" class="text-end pe-4">Preço Médio</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+         <tbody>
+            <tr>
+                <td class="ps-4 fw-semibold text-muted">#MEC-01</td>
+                <td>
+                    <div>Troca de Óleo e filtro</div>
+                    <small class="text-muted">Inclui checagem de fluidos e filtro de combustível</small>                    
+                </td>
+                <td><span class="badge bg-info text-dark"><i class="bi bi-clock me-1"></i>40 min</span></td>
+                <td>Básica</td>
+                <td class="text-end pe-4 fw-bold text-dark">R$ 120,00</td>
+            </tr>
+
+            <tr>
+                <td class="ps-4 fw-semibold text-muted">#MEC-02</td>
+                <td>
+                    <div class="fw-bold">Balanciamento e alinhamento</div>
+                    <small class="text-muted">4 rodas com aferição computadorizada</small>                    
+                </td>
+                <td><span class="badge bg-info text-dark"><i class="bi bi-clock me-1"></i>1h 00min</span></td>
+                <td>Básica</td>
+                <td class="text-end pe-4 fw-bold text-dark">R$ 150,00</td>
+            </tr>
+
+            <tr>
+                <td class="ps-4 fw-semibold text-muted">#MEC-03</td>
+                <td>
+                    <div class="fw-bold">Troca de pastilhas de freio</div>
+                    <small class="text-muted">Eixo dianteiro(mão de obra)</small>                    
+                </td>
+                <td><span class="badge bg-info text-dark"><i class="bi bi-clock me-1"></i>1h 30min</span></td>
+                <td>Básica</td>
+                <td class="text-end pe-4 fw-bold text-dark">R$ 180,00</td>
+            </tr>
+            <tr>
+                <td class="ps-4 fw-semibold text-muted">#MEC-04</td>
+                <td>
+                    <div class="fw-bold">Diagnostico de injeção eletrônica</div>
+                    <small class="text-muted">Passagem de scanner e leitura de erros</small>                    
+                </td>
+                <td><span class="badge bg-info text-dark"><i class="bi bi-clock me-1"></i>45min</span></td>
+                <td>Básica</td>
+                <td class="text-end pe-4 fw-bold text-dark">R$ 130,00</td>
+            </tr>
+            <tr>
+                <td class="ps-4 fw-semibold text-muted">#MEC-05</td>
+                <td>
+                    <div class="fw-bold">Troca de correa dentada</div>
+                    <small class="text-muted">Incluso tensor de correia e verificação de bomba d'água</small>                    
+                </td>
+                <td><span class="badge bg-info text-dark"><i class="bi bi-clock me-1"></i>3h 30min</span></td>
+                <td>Básica</td>
+                <td class="text-end pe-4 fw-bold text-dark">R$ 450,00</td>
+            </tr>
+            <tr>
+                <td class="ps-4 fw-semibold text-muted">#MEC-06</td>
+                <td>
+                    <div class="fw-bold">Higienização do ar-condicionado</div>
+                    <small class="text-muted">Aplicação de ozônio + troca de filtro de cabine</small>                    
+                </td>
+                <td><span class="badge bg-info text-dark"><i class="bi bi-clock me-1"></i>50min</span></td>
+                <td>Básica</td>
+                <td class="text-end pe-4 fw-bold text-dark">R$ 140,00</td>
+            </tr>
+         </tbody>
+    </table>
+</div>
+
+
+
+
+
+    <!--------------------------------------------------------------------------------------------------------
+    Área de rodapé
+    ---------------------------------------------------------------------------------------------------------->
+    <footer class="bg-dark text-white py-4 fixed-bottom">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-lg-between align-items-center gap-3">
+                <p>&copy; 2026 Meu Site. Todos direitos reservados.</p>
+                <nav class="d-flex gap-3">
+                    <a class="text-decoration-none text-white" href="#">Termos de uso</a>
+                    <a class="text-decoration-none text-white" href="#">Privacidade</a>
+                    <a class="text-decoration-none text-white" href="#">Suporte</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
