@@ -128,3 +128,17 @@ console.log(idade > 18 ||  possuiCarteira); // verdadeiro
 
 let Gasolina = true;
 console.log(!Gasolina);
+
+
+/**
+ * conversão de tipos - cast
+ * converte texto para numero
+ */
+let numero4 = "10"; // string
+let numero5 = "20"; // string
+
+console.log(typeof numero4);
+console.log(typeof numero5);
+
+numero5 = Number(numero5);
+console.log(typeof numero5);
